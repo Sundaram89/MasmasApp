@@ -1,0 +1,80 @@
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    app:cardCornerRadius="22dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/menu_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_pic"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="center_vertical">
+                <TextView
+                    android:id="@+id/menu_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Spacy fresh crab"
+                    android:fontFamily="@font/benton2"
+                    android:textColor="@color/fontColor1"
+                    android:textFontWeight="400"
+                    android:textSize="15dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/menu_tittle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Waroenk kita"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/benton1"
+                    android:textColor="@color/fontcolor3"
+                    android:textFontWeight="400"
+                    android:textSize="14dp"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buy_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:background="@drawable/button"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/benton"
+                    android:text="Buy Again"
+                    android:textAllCaps="false"
+                    android:textFontWeight="400"
+                    android:textSize="12dp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/menu_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$ 35"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/benton2"
+                android:textColor="@color/fontColor"
+                android:textFontWeight="400"
+                android:textSize="19dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,141 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/ic_pattern__2_"
+       />
+
+        <LinearLayout
+            android:id="@+id/img2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="38dp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/backgroundback"
+            android:layout_marginStart="25dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:lineHeight="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/benton"
+            android:text="Fill in your bio to get started"
+            android:textColor="@color/fontColor1"
+            android:textFontWeight="400"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img2"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="This data will be displayed in your account profile for security"
+            android:textFontWeight="400"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:lineHeight="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt1"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/benton1"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/fontColor1"/>
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/buttonbackground"
+            android:fontFamily="@font/benton1"
+            android:hint=" First  Name"
+            android:inputType="text"
+            android:paddingLeft="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt2"
+            android:textAlignment="textStart"
+            android:textFontWeight="400"
+            android:textSize="14dp" />
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/buttonbackground"
+            android:fontFamily="@font/benton1"
+            android:hint="Last  Name"
+            android:inputType="text"
+            android:paddingLeft="16dp"
+            android:textAlignment="textStart"
+            android:textFontWeight="400"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstname"/>
+        <EditText
+            android:id="@+id/mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/buttonbackground"
+            android:fontFamily="@font/benton1"
+            android:hint="Mobile  Number"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lastname"
+            android:paddingLeft="16dp"
+            android:textAlignment="textStart"
+            android:textFontWeight="400"
+            android:textSize="14dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn5"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/white"
+        android:layout_marginEnd="125dp"
+        android:fontFamily="@font/benton"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textFontWeight="400"
+        android:textSize="16dp" />
+
+</RelativeLayout>

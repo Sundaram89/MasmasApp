@@ -1,0 +1,47 @@
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_pattern"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo1" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/viga"
+            android:letterSpacing="0.05"
+            android:lineHeight="15.73dp"
+            android:text="MasmasFood"
+            android:textColor="@color/fontColor"
+            android:textFontWeight="400"
+            android:textSize="40dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deliever Favorite Food"
+            android:textSize="13dp"
+            android:fontFamily="@font/inter"
+            android:lineHeight="15.73dp"
+            android:textFontWeight="400"
+            android:textColor="@color/fontColor1"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
